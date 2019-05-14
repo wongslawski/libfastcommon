@@ -94,13 +94,19 @@ extern int pthread_mutexattr_settype(pthread_mutexattr_t *attr, int kind);
 #define IP_ADDRESS_SIZE	16
 #define INFINITE_FILE_SIZE (256 * 1024LL * 1024 * 1024 * 1024 * 1024LL)
 
+/*
 #ifndef byte
 #define byte signed char
 #endif
+*/
+typedef signed char byte;
 
+/*
 #ifndef ubyte
 #define ubyte unsigned char
 #endif
+*/
+typedef unsigned char ubyte;
 
 #ifndef WIN32
 #ifndef INADDR_NONE
